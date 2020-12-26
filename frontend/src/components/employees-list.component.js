@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Card, Spinner } from 'react-bootstrap';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUserNurse } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
@@ -173,7 +173,7 @@ export default class EmployeesList extends Component {
             <Container style={{marginTop: "100px", marginBottom: "100px", width: "90%"}} fluid>
                 <Card>
                     <Card.Header className={"d-flex justify-content-between"}>
-                        <div style={{display: 'flex', alignItems: 'center', fontSize: '24px'}}><FontAwesomeIcon icon={faUser}/>&nbsp;Employees</div>
+                        <div style={{display: 'flex', alignItems: 'center', fontSize: '24px'}}><FontAwesomeIcon icon={faUserNurse}/>&nbsp;Employees</div>
                     </Card.Header>
                     <Card.Body>
                         {table}

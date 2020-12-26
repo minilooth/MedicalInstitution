@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Card, Spinner } from 'react-bootstrap';
-import { faHospital } from '@fortawesome/free-solid-svg-icons';
+import { faProcedures } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
@@ -162,7 +162,7 @@ export default class RoomsList extends Component {
             <Container style={{marginTop: "100px", marginBottom: "100px", width: "100%"}} fluid>
                 <Card>
                     <Card.Header className={"d-flex justify-content-between"}>
-                        <div style={{display: 'flex', alignItems: 'center', fontSize: '24px'}}><FontAwesomeIcon icon={faHospital}/>&nbsp;Rooms</div>
+                        <div style={{display: 'flex', alignItems: 'center', fontSize: '24px'}}><FontAwesomeIcon icon={faProcedures}/>&nbsp;Rooms</div>
                     </Card.Header>
                     <Card.Body>
                         {table}

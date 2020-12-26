@@ -1,8 +1,9 @@
 import React from "react";
-import { NavDropdown, Nav, Navbar } from "react-bootstrap";
+import { NavDropdown, Nav, Navbar, Image } from "react-bootstrap";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'; 
+import logo from "./logo.png";
 
 import EmployeesList from './components/employees-list.component';
 import AddEmployee from './components/add-employee.component';
@@ -15,7 +16,7 @@ function App() {
     return (
         <div>
             <Navbar className="navbar navbar-expand navbar-light bg-light justify-content-between" fixed="top">
-                <Navbar.Brand href="/">Medical Institution</Navbar.Brand>
+                <Navbar.Brand href="/" className="d-flex align-items-center"><Image src={logo} height={24}/>&nbsp;Medical Institution</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto">
